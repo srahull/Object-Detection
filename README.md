@@ -4,7 +4,7 @@
 
 
 
-Everything I implemented here has come from a course called Convolutional Neural Netwroks on coursera taught by Andrew Ng. 
+Everything I implemented here has come from a course called Convolutional Neural Network on Coursera taught by Andrew Ng. 
 
 References: The ideas presented here came primarily from the two YOLO papers. The implementation here also took significant inspiration and used many components from Allan Zelener's GitHub repository. The pre-trained weights used in this exercise came from the official YOLO website.
 
