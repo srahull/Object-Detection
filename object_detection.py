@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-testoing
-"""
-
 print("local machine")
 import argparse
 import os
@@ -283,17 +277,4 @@ def predict(sess, image_file):
     return out_scores, out_boxes, out_classes
 
 out_scores, out_boxes, out_classes = predict(sess, "eliboi.jpg")
-#distance = 214 pixels
-#factor= 214/601
-#x = 15
-#5.34 / 0.35
-#distance  = factor * x
-#print("distance",distance, " feet")
-#speed = distance/ 0.35
-#print("speed",speed)
 
-# # start 891*1415 end = 2024*1415
-# 601 pixels = 15 feet
-# 28 feet
-# 0.00530303 miles . 0.00530303*3600= 19.1 miles an hour
-#out_scores, out_boxes, out_classes = predict(sess, "0004.jpg")
