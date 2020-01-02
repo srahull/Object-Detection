@@ -1,4 +1,4 @@
-## Object Detection
+# Object Detection
 
 ## Sample Outputs
 <img src="Output images/ms2.jpg">
