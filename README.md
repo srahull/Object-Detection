@@ -1,7 +1,7 @@
 ## Object Detection
 
 <img src="Output images/ms2.jpg">
-<img src="Output images/Part2Car.JPG">
+<img src="Output images/ob1.JPG">
 
 
 
