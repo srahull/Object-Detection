@@ -39,9 +39,6 @@ def yolo_filter_boxes(box_confidence, boxes, box_class_probs, threshold = .6):
     scores -- tensor of shape (None,), containing the class probability score for selected boxes
     boxes -- tensor of shape (None, 4), containing (b_x, b_y, b_h, b_w) coordinates of selected boxes
     classes -- tensor of shape (None,), containing the index of the class detected by the selected boxes
-
-    Note: "None" is here because you don't know the exact number of selected boxes, as it deps on the threshold.
-    For example, the actual output size of scores would be (10,) if there are 10 boxes.
     """
 
     # Step 1: Compute box scores
@@ -49,13 +46,12 @@ def yolo_filter_boxes(box_confidence, boxes, box_class_probs, threshold = .6):
     box_scores = box_confidence * box_class_probs
 
     # Step 2: Find the box_classes using the max box_scores, keep track of the corresponding score
-    ### START CODE HERE ### (≈ 2 lines)
     box_classes = K.argmax(box_scores, axis=-1)
     box_class_scores = K.max(box_scores, axis=-1)
 
     # Step 3: Create a filtering mask based on "box_class_scores" by using "threshold". The mask should have the
     # same dimension as box_class_scores, and be True for the boxes you want to keep (with probability >= threshold)
-    ### START CODE HERE ### (≈ 1 line)
+    
     filtering_mask = ((box_class_scores) >= threshold)
 
     # Step 4: Apply the mask to box_class_scores, boxes and box_classes
