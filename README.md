@@ -3,8 +3,8 @@
 ## Sample Outputs
 <img src="Output images/ms2.jpg">
 <img src="Output images/ob1.jpg">
-<img src="Output images/ob1.jpg">
-<img src="Output images/ob1.jpg">
+<img src="Output images/person.jpg">
+<img src="Output images/giraffe.jpg">
 <img src="Output images/horses.jpg">
 
 
