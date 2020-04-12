@@ -251,7 +251,7 @@ def predict(sess, image_file):
     """
 
     # Preprocess your image
-    image, image_data = preprocess_image("/Users/rahulsharma/Downloads/jovyan/work/week3/Car detection for Autonomous Driving/images/" + image_file, model_image_size = (608, 608))
+    image, image_data = preprocess_image("/Users/rahulsharma/Downloads/images/" + image_file, model_image_size = (608, 608))
 
     # Run the session with the correct tensors and choose the correct placeholders in the feed_dict.
     # You'll need to use feed_dict={yolo_model.input: ... , K.learning_phase(): 0})
