@@ -227,10 +227,10 @@ with tf.Session() as test_b:
     print("boxes.shape = " + str(boxes.eval().shape))
     print("classes.shape = " + str(classes.eval().shape))
 sess = K.get_session()
-class_names = read_classes("/Users/rahulsharma/Downloads/jovyan/work/week3/Car detection for Autonomous Driving/model_data/coco_classes.txt")
+class_names = read_classes("/Users/rahulsharma/Downloads/model_data/coco_classes.txt")
 anchors = read_anchors("/Users/rahulsharma/Downloads/model_data/yolo_anchors.txt")
 image_shape = (3024., 4032.)#(1841.,2826.)#for dog photo# pixel 2 3024 4032(720., 1280.)    2826 × 1841
-yolo_model = load_model("/Users/rahulsharma/Downloads/jovyan/work/week3/Car detection for Autonomous Driving/model_data/yolo.h5")
+yolo_model = load_model("/Users/rahulsharma/Downloads/model_data/yolo.h5")
 yolo_outputs = yolo_head(yolo_model.output, anchors, len(class_names))
 scores, boxes, classes = yolo_eval(yolo_outputs, image_shape)
 
